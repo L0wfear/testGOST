@@ -1,7 +1,7 @@
 import { usersReducer } from "./users.reducer";
 import { usersWatcher } from "./users.sagas";
 
-export function usersModule() {
+export function usersModule(): any {
   return {
     // Unique id of the module
     id: "users",
