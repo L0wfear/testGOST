@@ -1,0 +1,31 @@
+.users {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.user_details {
+  border: 1px red solid;
+  border-radius: 5px;
+  width: 200px;
+  margin-left: 15px;
+  padding: 5px;
+  background-color: khaki;
+}
+
+.users_table {
+  width: 200px;
+  table {
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    tbody tr {
+        cursor: pointer;
+    }
+  }
+}
+
+.active {
+  color: red;
+}

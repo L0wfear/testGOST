@@ -1,0 +1,47 @@
+{
+    "extends": [
+      "tslint:recommended",
+      "./node_modules/tslint-react",
+      "./node_modules/tslint-config-prettier",
+      "./node_modules/tslint-plugin-prettier"
+    ],
+    "rules": {
+      "prettier": true,
+      "no-duplicate-imports": [true],
+      "no-unused-expression": [true, "allow-fast-null-checks"],
+      "object-literal-sort-keys": false,
+      "only-arrow-functions": false,
+      "jsx-no-lambda": false,
+      "await-promise": true,
+      "no-console": false,
+      "prefer-for-of": false,
+      "curly": [true, "ignore-same-line"],
+      "no-empty-interface": false,
+      "comment-format": false,
+      "no-string-literal": false,
+      "import-spacing": true,
+      "ordered-imports": [false, { "grouped-imports": false }],
+      "member-ordering": [
+        false,
+        {
+          "order": [
+            "public-before-private",
+            "static-before-instance",
+            "variables-before-functions"
+          ]
+        }
+      ]
+    },
+    "jsRules": {
+      "curly": true
+    },
+    "linterOptions": {
+      "exclude": [
+        "node_modules/**/*.ts",
+        "public/**/*.ts",
+        "**/*.js"
+      ]
+    },
+    "defaultSeverity": "warning"
+  }
+  
